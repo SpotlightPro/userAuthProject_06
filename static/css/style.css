@@ -16,3 +16,23 @@ h1,
 p {
   text-align: center;
 }
+
+nav {
+  padding: 1rem;
+  background-color: #44b78b;
+  color: whitesmoke;
+  font-size: 2.5rem;
+}
+main {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #81dbb8;
+}
+a:hover {
+  opacity: 0.85;
+}
