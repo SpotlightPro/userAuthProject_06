@@ -6,11 +6,21 @@
 {% endblock %}
 
 {% block content%}
+  <br><section>
+        <h1>Post list page</h1>
+          <p>Here is your QMOs message post lists</p><hr><br>
+            {%  for post in posts  %}
+              <article class="post">
+                <h2>{{ post.title }}</h2><hr>
+                <p>{{ post.date }}</p>
+                <h5>{{ post.body }}</h5>
+                <hr>
+              </article><br>
 
-    <h1>Post list page</h1>
-    <p>Here is your QMOs message post lists</p>
-    <p>
-    Check my other<a href="/"> Home</a> page or <a href="/about"> About</a>
-    </p>
+            {% endfor %}
 
+          <br><br>
+          
+    </section>
+    
 {% endblock %}

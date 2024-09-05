@@ -6,4 +6,4 @@ link: https://www.youtube.com/watch?v=Rp5vd34d-z4
 
 - Day one: Django app created
 - Day two: Posts app created
-- Day three:
+- Day three:Messages page added and works properly
