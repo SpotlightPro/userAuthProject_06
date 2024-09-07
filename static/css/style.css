@@ -43,6 +43,11 @@ main {
   display: grid;
   place-content: center;
 }
+.container{
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
 
 a {
   text-decoration: none;
@@ -50,4 +55,10 @@ a {
 }
 a:hover {
   opacity: 0.85;
+}
+.header {
+  color: #a27208;
+}
+h5, comment {
+  background-color: #a27208 !important;
 }
