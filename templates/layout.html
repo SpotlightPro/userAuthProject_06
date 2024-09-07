@@ -15,9 +15,15 @@
   </head>
   <body>
     <nav>
-        <a href="/">🏠 Home</a>|
-        <a href="{% url 'posts:list' %}">📰 Posts</a>|
-        <a href="/about">😀 About</a>
+        <a href="/">
+          <spsn role="img" arial-label="Home" >🏠 Home</span>
+        </a>|
+        <a href="{% url 'posts:list' %}"> 
+          <spsn role="img" arial-label="Posts" >📰 Posts</span>
+        </a>|
+        <a href="/about"> 
+          <spsn role="img" arial-label="About" >😀 About</span>
+        </a>
     </nav>
     <main>
         {% block content%}
