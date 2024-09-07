@@ -16,8 +16,8 @@
   <body>
     <nav>
         <a href="/">🏠 Home</a>|
-        <a href="/posts">📰 Posts</a>|
-        <a href="/">😀 About</a>
+        <a href="{% url 'posts' %}">📰 Posts</a>|
+        <a href="/about">😀 About</a>
     </nav>
     <main>
         {% block content%}
