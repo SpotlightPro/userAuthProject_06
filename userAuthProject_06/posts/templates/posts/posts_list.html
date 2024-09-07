@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{%  block title %}
+  Posts list page
+{% endblock %}
+
+{% block content%}
+  <br><section>
+        <h1 class="header">Post list page</h1>
+          <p>Here is your QMOs message post lists</p><hr><br>
+            {%  for post in posts  %}
+              <article class="post">
+                <h2>
+                  <a href="{% url 'posts:page' slug=post.slug %}">
+                  {{ post.title }}
+                  </a>
+                </h2><hr> 
+                <p class="header">{{ post.date }}</p>
+                <h5 class"comment">{{ post.body }}</h5>
+                <hr>
+              </article><br>
+
+            {% endfor %}
+
+          <br><br>
+          
+    </section>
+    
+{% endblock %}

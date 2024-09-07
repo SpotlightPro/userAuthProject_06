@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{%  block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content%}
+
+  <br><section>
+        <img class="banner" src="{{ post.banner.url }}" alt="{{ post.title }}" />
+        <div class="div-header">
+          <h1 class="header">{{ post.title }}</h1>        
+          <p>Here is your QMOs message post lists</p><hr><br>
+                <p class="header">{{ post.date }}</p>
+                <h5 class"comment">{{ post.body }}</h5>
+        </div>
+            <hr>
+
+          <br><br>
+          
+    </section> 
+    
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        {% block title %}
+            QMOs App
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script src="{% static 'js/main.js' %}" defer></script>
+  </head>
+  <body>
+    <nav>
+        <a href="/">
+          <spsn role="img" arial-label="Home" >🏠 Home</span>
+        </a>|
+        <a href="{% url 'posts:list' %}"> 
+          <spsn role="img" arial-label="Posts" >📰 Posts</span>
+        </a>|
+        <a href="/about"> 
+          <spsn role="img" arial-label="About" >😀 About</span>
+        </a>
+    </nav><br><br>
+    <main>
+        {% block content%}
+
+        {% endblock %}
+    </main>
+  </body>
+  <footer>
+    Check my other<a href="/"> Home</a> or <a href="/about"> About</a> or<a href="/posts"> Posts</a> page
+    </footer>
+</html>
