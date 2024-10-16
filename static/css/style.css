@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  min-width: 100vh;
+  min-width: 10vh;
   display: grid;
   place-content: center;
   background-color: black;
@@ -74,5 +74,11 @@ comment {
   display: block;
   width: 100%;
   max-width: 800px;
+  margin: auto;
+}
+.banner-post {
+  display: block;
+  width: 200px;
+  max-width: 200px;
   margin: auto;
 }

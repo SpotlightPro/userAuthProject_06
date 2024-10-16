@@ -1,1 +1,1 @@
-console.log('This is JS message form your web page page')
+console.log('This is JS message form your web page page my friend Lazaros')
